@@ -1,0 +1,130 @@
+ perpustakaanrizka/
+│
+├─ pages/
+│  │
+│  ├─ admin/                    ← layout untuk role admin
+│  │  ├─ header.php
+│  │  ├─ navbar.php
+│  │  ├─ sidebar.php
+│  │  └─ footer.php
+│  │
+│  ├─ peminjam/                 ← layout untuk role peminjam
+│  │  ├─ header.php
+│  │  ├─ navbar.php
+│  │  ├─ sidebar.php
+│  │  └─ footer.php
+│  │
+│  └─ landing/                  ← layout tampilan publik
+│     ├─ header.php
+│     ├─ navbar.php
+│     ├─ footer.php
+│     ├─ sidebar-left.php
+│     └─ sidebar-right.php
+│
+│
+├─ assets/
+│  ├─ dist/                     ← file bawaan AdminLTE
+│  │  ├─ css/
+│  │  ├─ js/
+│  │  └─ img/
+│  │
+│  └─ plugins/                  ← plugin tambahan
+│     ├─ datatables/
+│     ├─ chartjs/
+│     └─ summernote/
+│
+│
+├─ views/
+│  │
+│  ├─ otentikasiadmin/          ← login & register admin
+│  │  ├─ login.php
+│  │  ├─ register.php
+│  │  ├─ logout.php
+│  │  └─ proseslogin.php
+│  │
+│  ├─ otentikasipeminjam/       ← login & register peminjam
+│  │  ├─ login.php
+│  │  ├─ register.php
+│  │  ├─ logout.php
+│  │  └─ proseslogin.php
+│  │
+│  ├─ admin/                    ← semua halaman backend admin
+│  │  │
+│  │  ├─ admin/                 ← CRUD admin
+│  │  │  ├─ prosesadmin.php
+│  │  │  ├─ daftaradmin.php
+│  │  │  ├─ tambahadmin.php
+│  │  │  └─ editadmin.php
+│  │  │
+│  │  ├─ peminjam/              ← CRUD peminjam
+│  │  │  ├─ prosespeminjam.php
+│  │  │  ├─ daftarpeminjam.php
+│  │  │  ├─ tambahpeminjam.php
+│  │  │  └─ editpeminjam.php
+│  │  │
+│  │  ├─ buku/                  ← CRUD buku
+│  │  │  ├─ prosesbuku.php
+│  │  │  ├─ daftarbuku.php
+│  │  │  ├─ tambahbuku.php
+│  │  │  └─ editbuku.php
+│  │  │
+│  │  ├─ peminjaman/
+│  │  │  ├─ prosespeminjaman.php
+│  │  │  ├─ daftarpeminjaman.php
+│  │  │  ├─ tambahpeminjaman.php
+│  │  │  └─ editpeminjaman.php
+│  │  │
+│  │  ├─ pengembalian/
+│  │  │  ├─ prosespengembalian.php
+│  │  │  ├─ daftarpengembalian.php
+│  │  │  ├─ tambahpengembalian.php
+│  │  │  └─ editpengembalian.php
+│  │  │
+│  │  ├─ laporan/
+│  │  │  ├─ daftarlaporan.php
+│  │  │  └─ cetaklaporan.php
+│  │  │
+│  │  ├─ dashboardadmin.php
+│  │  └─ dashboardpetugas.php
+│  │
+│  ├─ peminjam/                 ← halaman khusus peminjam
+│  │  ├─ dashboardpeminjam.php
+│  │  ├─ daftar-buku.php
+│  │  ├─ detail-buku.php
+│  │  ├─ riwayat-peminjaman.php
+│  │  └─ prosespeminjam.php
+│  │
+│  └─ landing/                  ← halaman depan publik
+│     ├─ home.php
+│     ├─ daftar-buku.php
+│     ├─ detil-buku.php
+│     ├─ tentang.php
+│     ├─ kontak.php
+│     ├─ 404.php
+│     └─ proseskomentar.php (opsional)
+│
+│
+├─ includes/
+│  ├─ koneksi.php               ← koneksi database utama
+│  ├─ konfig.php                ← base_url, title, site_name
+│  ├─ ceksessionadmin.php       ← validasi login admin
+│  ├─ ceksessionpeminjam.php    ← validasi login peminjam
+│  ├─ fungsiupload.php          ← validasi upload foto
+│  ├─ fungsivalidasi.php        ← sanitasi input
+│  └─ htaccess/
+│
+├─ database/
+│  ├─ perpustakaanrizka.sql     ← dump database
+│
+├─ uploads/
+│  ├─ admin/
+│  ├─ peminjam/
+│  ├─ buku/
+│  ├─ peminjaman/
+│  ├─ pengembalian/
+│  └─ .htaccess
+│
+├─ dashboard.php                ← pusat halaman backend (routing)
+├─ index.php                    ← pusat halaman landing / publik
+├─ .htaccess
+└─ README.md 
